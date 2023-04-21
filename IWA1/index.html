@@ -12,6 +12,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="Stylesheet">
 
+        <!-- Load JavaScript and runs it. 
+            this does not nee to be called "scrips.js", but it is is comment to make it "scrips" or "scripts".
+            the "defer" attribute tells the browser to load the HTML first before running the JavaScript. -->
+
+        <!--(defer) Download, parse it, only once html html is ready it runs-->
+        <!-- (async) Download, parse it, runs immediately in the background-->
         <script src="/IWA1/scrips.js" defer></script>
 
     </head>
@@ -46,6 +52,10 @@
         </aside> -->
 
         <main class="counter">
+
+            <noscript>
+                <p class="error">this web app requires JavaScript to work</p>
+            </noscript>
 
             <input class="counter__value" data-key="number" readonly value="0">
             <button data-key="subtract" class="counter__button counter__button__first">-</button>
