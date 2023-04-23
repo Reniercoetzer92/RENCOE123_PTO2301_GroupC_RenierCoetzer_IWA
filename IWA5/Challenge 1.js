@@ -3,7 +3,7 @@ BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
 NONE_SELECTED = 0
 
 let customers = 1
-const location = "AUS"
+const location = "RSA"
 currency = "$"
 
 shipping = null
