@@ -1,22 +1,20 @@
 FREE_WARNING = 'Free shipping only applies to single customer orders'
 BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
-NONE_SELECTED = 0
+NONE_SELECTED = '0'
 
-let customers = 1
+let customers = 1 // define Customers, location, currency
 const location = "RSA"
-currency = "$"
+let currency = "$"
 
 shipping = null
 
 const RSA = "RSA"
 const NAM = "NAM"
 
-if (location === RSA) { 
-	shipping = 400  
-	currency === 'R' 
-} 
-
-else if (location === NAM){
+if (location === RSA) { // if status format incorrect
+	shipping = 400 
+	currency = 'R' 
+} else if (location === NAM){ // research something ive struggled with.
 	shipping = 600 
 }
 else shipping = 800
@@ -29,10 +27,10 @@ pens = 5 * NONE_SELECTED
 
 let price = shoes + toys + shirts + batteries + pens
 
-if (price > 1000) {
+if (price > 1000 && "60") { // not sure what they wanted here
 	if (location === NAM && customers < 2) {
 			if (location === RSA)
-		    shipping = 0 || calcShipping
+		    shipping = null || calcShipping
 		}
 	}
 
