@@ -6,7 +6,7 @@ let customers = 1 // define Customers, location, currency
 const location = "RSA"
 let currency = "$"
 
-shipping = null
+let shipping = null
 
 const RSA = "RSA"
 const NAM = "NAM"

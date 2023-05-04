@@ -17,6 +17,6 @@ const startingAfterTax = salary * (1 - taxAsDecimal);
 const balance = startingAfterTax - transport - food - rent; 
 
 if (hourOfDay != null && minuteOfDay != null && hourOfDay === 0 && minuteOfDay === 0) { //changed comparisons to strict equality and null check can be remove its not neccesary.
-    console.log(balance.toFixed(3));
+    console.log("R",balance.toFixed(2));
   }
 
