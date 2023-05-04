@@ -1,0 +1,4 @@
+const thisIsAVeriable = '' //camelCase
+const ThisIsAVeriable = '' //pascalCase
+const this_is_a_veriable = '' //snakeCase
+const this-is-a-veriable = '' //kebabCase
