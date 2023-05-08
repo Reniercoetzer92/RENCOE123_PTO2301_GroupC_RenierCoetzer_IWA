@@ -27,8 +27,8 @@ const leo = {                                                                   
 
 const sarah = {
 	name: sarahName.trim() + ' ' + sarahSurname,                                         //"h" in Sarah was missing // remove blank space after Sarah with .trim().
-    balance: sarahBalance,
-    accessId: "6b279ae5-5657-4240-80e9-23f6b635f7a8",                                     
+	balance: sarahBalance,
+	accessId: "6b279ae5-5657-4240-80e9-23f6b635f7a8",                                     
 	age: 62,                                                                              // Change the format off Sarah's information.
 	address: {
         'number': sarahNumber,
