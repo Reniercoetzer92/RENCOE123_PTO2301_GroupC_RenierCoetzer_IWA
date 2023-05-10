@@ -1,0 +1,87 @@
+00:00:00 Top-level scope is the "window" object
+
+00:00:25 "window" can be omitted for top-level
+
+00:00:50 "window" is the biggest object in JavaScript
+
+00:01:10 Grouped functionality exposed via objects
+
+00:02:30 Can store functions in objects too
+
+00:03:00 Data in objects are called "properties"
+
+00:03:20 Functions in objects are called "methods"
+
+00:04:10 Call methods with dot notation
+
+00:05:40 "window" object
+
+00:06:20 "shift" + "enter" in browser console
+
+00:06:40 Logging "window" to console
+
+00:07:10 Example of prototypical inheritance
+
+00:08:10 Going deeper into prototype chaining
+
+00:09:00 Drill down deeper into nested objects too
+
+00:09:30 Remember to use commas to separate items in the object
+
+00:10:20 Using "typeof" with objects
+
+00:10:30 Most composite data is type "object"
+
+00:11:30 Example of JSDoc to annotate objects
+
+00:12:00 Built-in objects already have JSDoc
+
+00:13:20 Can override any existing variable with object
+
+00:13:50 Annotating individual properties with JSDoc
+
+00:16:10 Annotate object itself with JSDoc
+
+00:17:20 JSDoc comments most useful for objects
+
+00:18:10 "ctrl"/"cmd" + click on object to go to creation
+
+00:18:50 "delete" operator
+
+00:19:20 Recommend "null" reassignment over "delete"
+
+00:20:30 Big part of learning JS learning built-in objects
+
+00:21:30 Similar to learning the meaning of words in English
+
+00:22:20 You will never memorise everything in JavaScript
+
+00:22:40 Will ALWAYS be more you don't know than you know
+
+00:22:50 Yet some built-in objects are used all the time
+
+00:23:20 Main way to learn is by using JavaScript and Googling
+
+00:23:30 Some things are harder to understand than others
+
+00:24:20 Create a repeating habit of learning a little bit over time
+
+00:24:40 You already master a language harder than JavaScript
+
+00:25:10 But similar to learning English, it takes patience
+
+00:25:30 MDN is a good user manual for JavaScript
+
+00:26:00 Learning how to use MDN is also a skill
+
+00:26:40 Common MDN page structure
+
+00:27:10 Can drill down into specific property/method
+
+00:27:40 Good habit to read up on random things in MDN
+
+00:27:50 Add "mdn" to Google to get MDN results
+
+00:28:30 MDN also has more accessible "tutorials"
+
+//use local storage MDN
