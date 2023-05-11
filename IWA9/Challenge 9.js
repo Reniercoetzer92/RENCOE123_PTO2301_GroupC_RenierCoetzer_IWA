@@ -34,4 +34,4 @@ const taxAsDecimal = parseFloat(tax[913]) / 100                                 
 const startingAfterTax = salary * (1 - taxAsDecimal)                                       //put 1 - Decimal value in brackets it should first calculate 1 - the taxdecimal then times salary
 const type = size + '-' + lodging                                                          //Swop around Wording // Put a -"-" in the middle of words to form the word 'Large-Apartment'.
 const balance = startingAfterTax - expenses.transport - expenses.food - rent[type]         //Add Sallary, Expenses in brackets should be a dot to access the statement of expenses //Remove expenses for rent 
-console.log(type, balance.toFixed(2))                                                      //add tofixes for 2 decimal for answer.
+console.log(balance.toFixed(2))                                                            //add tofixes for 2 decimal for answer.
