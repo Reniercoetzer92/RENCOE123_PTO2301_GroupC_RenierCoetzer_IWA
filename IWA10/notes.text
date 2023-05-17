@@ -1,0 +1,100 @@
+//We have spoken about:
+
+//strings
+//numbers
+//boolean
+//null     -  ovewrite memory
+//underfined
+//symbols
+
+symbol()
+BigInt()
+
+big difference between //Primitive Type and //composite Type
+
+Primitive example - "hello World" === 'yo'  
+                    "hello World" === 'hello World' 
+                     true === True
+                     false === null 
+
+Composite example - const first = 1
+                   const second = 1 
+
+                   console.log(first === second)  false
+                   console.log(first.name === second.name)  true
+                   //are not the same 2 differnt objects with the same value.
+
+                   //const symbol = 'hello'
+
+                     const obj{
+                        [symbol]: 'hello'
+                     }
+
+                     obj[symbol]
+
+//objects
+
+//Date - classes(in pascal case)
+//Math - classes (in pascal case)
+//document
+
+Math.floor - Rounds number down.
+Math.Ceiling - Rounds number down.
+math.round - rounds is it Up or down depending on closes number.
+
+//const original = 120
+  const discount = 14
+
+  const percentage = (original / 100) *discount
+  console.log('big sale! ${math.round(percentage)}%off!)
+
+//math.max (100,90, 50, 10, 200, 40, -5) it will get the highest number
+//math.min  (100,90, 50, 10, 200, 40, -5) it will get the lowest number
+
+//Date
+
+const instance = new Date( can use specific date)
+
+console.log(instance)
+
+use date fns
+
+unix time, epox = 
+
+const future = new date()
+const current = new date().getTime()
+
+console.log(future > current)
+
+or
+
+const future = new date('10 January 2025 15:15')
+const current = new date().getTime()
+
+console.log(`there are ${Math.ceil((future - current) / 1000 / 60 / 60 / 24)} days left`) //use backticks for instipulation
+
+
+also get
+
+cosnt current = new Date().getFullYear
+
+console.log(new date().getFullYear())
+
+or 
+
+console.log(new date().getFullYear() - 10)
+
+console.log(new date().getDate())
+
+console.log(new date().getMonth() + 1) //index
+
+const obj = {
+    test: {
+        hello:{
+            schalk: 'greetings',
+            Lindie: ' Yo',
+        }
+    }
+}
+
+console.log(obj.test.hello.schalk)
