@@ -1,6 +1,6 @@
 const order1Root = document.querySelector('[data-key="order1"]');                   //use pacalcase to change format of veriable order 1, 2 and 3 
 const order1BiscuitsElement = order1Root.querySelector('.biscuits dd');             // add ";"after sentences. "add '=' sign"
-const order1DonutsElement = order1Root.querySelector('.donuts dd');                 //use queryselector and look for exact elements in html file.
+const order1DonutsElement = order1Root.querySelector('.donuts dd');                 //use queryselector and look for exact elements in html file. add '.' because its a div class
 const order1PancakesElement = order1Root.querySelector('.pancakes dd');        
 const order1StatusElement = order1Root.querySelector('.status dd');
 

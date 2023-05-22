@@ -1,0 +1,5 @@
+Please ensure that the following works correctly:
+
+1 Enable/disable buttons based on the status/properties in the STATUS_MAP object.
+2 Buttons are only allowed to be black and grayscale (no colour is allowed).
+3 The colour of the status indicator text should correspond to the values in STATUS_MAP.
