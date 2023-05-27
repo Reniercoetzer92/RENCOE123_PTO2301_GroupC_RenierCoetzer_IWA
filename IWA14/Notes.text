@@ -2,9 +2,57 @@ const example1 = () => {              //arrow function exprersion
     return 123
 }
 
-const example2 = function (){         //
+const example2 = function (){         //taditional Function Exprresion
     return 321
 }
+                                       
+function example3 () {                 //function Decalarratiion
+    return 890
+}                                       
 
 console.log(example1())
-console.log.(example2())
+console.log(example2())
+console.log(example3())    //Hoisting if you take this to the top, java goes thru code an put functions at the top.
+
+this                      //avoid 'this'. no clear logic.
+
+const example4 () {
+    test: function () {
+        console.log(this)
+    }
+}
+
+example4.test()                                     //{ test: [Function: test] }
+
+const counter = {
+    value: 120,
+
+    add: function () {
+        this.value = this.value + 1
+    },
+
+    minus: function () {
+        this.value = this.value - 1
+    }
+}
+
+counter.add()
+counter.add()
+counter.add()
+counter.minus()
+console.log(counter.value)
+
+                                                            //Recursion
+
+const example = (value) => {
+    const innerValue = value + 1
+
+    if (value < 20) {
+        return example(innerValue)
+    } else {
+    return innerValue
+    }
+}
+
+const result = example(1)
+console.log(result)                     //21
