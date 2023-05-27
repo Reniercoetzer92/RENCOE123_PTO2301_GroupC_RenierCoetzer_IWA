@@ -1,0 +1,10 @@
+const example1 = () => {              //arrow function exprersion
+    return 123
+}
+
+const example2 = function (){         //
+    return 321
+}
+
+console.log(example1())
+console.log.(example2())
