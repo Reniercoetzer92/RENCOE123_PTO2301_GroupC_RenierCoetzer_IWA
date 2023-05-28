@@ -1,0 +1,70 @@
+//Arrays
+
+Arrays are (object) that has numbers as keys.Why?
+
+const example = {
+    b: 'Hello',
+    a: 'World',
+}
+
+const example2 = {                             //it will arrange numbers for 0 to 100 regarding the order that you put them in.
+    2: 'Hello',
+    1: 'World'
+}
+
+console.log(example)     //{ b: 'Hello', a: 'World' }
+console.log(example2)    //{ '1': 'World', '2': 'Hello' } //its not a Arrays it just have the same behaviour as an array. but array has exstra thing included in them
+
+const example1 = {                             //it will arrange numbers for 0 to 100 regarding the order that you put them in.
+    0: 'Hello',
+    1: 'World',
+    2: 'How',
+    3: 'Are You',
+                                              //use Arrays literal "[]" to put it in Arrays 
+}
+
+console.log(example1[2]) 
+
+const example2 = [
+    'Hello', 
+    'World', 
+    'How', 
+    'Are You'
+]
+
+console.log(example2[2]) //How 
+                         //How
+
+console.log(example2.length) //4
+console.log(example2[example2.length - 1]) // Are You
+
+const array = ['a', 'o', 'i']
+console.log (array.length)   //3
+
+array.push('k')
+array.push('r')
+
+console.log(array)   //[ 'a', 'o', 'i', 'k', 'r' ]
+console.log(array.length)    //5
+
+array.pop()              //removes the last letter/number of arrays
+
+console.log(array)   //[ 'a', 'o', 'i', 'k',]
+console.log(array.length)    //4
+
+array.shift()    //like pop but first item at start
+array.unshift('t')  //like push but at start    //it can be numbers does not have to be strings.
+
+console.log(array)              //[ 't', 'o', 'i', 'k' ]
+console.log(array.length)      //4
+
+const array = [
+    {id: '105', name: 'peter', Surname: 'Pan'},
+    {id: '107', name: 'Marry', Surname: 'ann'},
+]
+
+console.log(array.length) //2
+
+array.push({id: '103', name: 'John', Surname: 'Smith'})
+
+console.log(array.length) //3
