@@ -68,3 +68,10 @@ console.log(array.length) //2
 array.push({id: '103', name: 'John', Surname: 'Smith'})
 
 console.log(array.length) //3
+
+function onlyUnique(value, index, array) {
+  return array.indexOf(value) === index; 
+}
+
+// usage example: var a = ['a', 1, 'a', 2, '1'];
+var unique = a.filter(onlyUnique); 

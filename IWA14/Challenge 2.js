@@ -1,6 +1,6 @@
-const add = (a, b) => {a + b};                                  //use arrow function exprersion
+const add = (a, b) => {a + b};                                  // add Const //use arrow function exprersion
 
-const multiply = (a, b) => {a - b }; 					       //use arrow function exprersion 
+const multiply = (b, c) => {b * c}; 					       // add Const//use arrow function exprersion 
 
 function internal () {                                         //use function Declarration
 	const add = this.internal.a + this.internal.b              //need to define Internal function
