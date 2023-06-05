@@ -1,0 +1,104 @@
+*  The Array object, as with arrays in other programming languages, enables storing a cpllection of multiple items under a single variable name,
+    and has members for performing common array operations.
+
+*  javascript arrays are resizable and contain a mix of different data.types
+
+*  javascript arrays are not associative arrays and so, 
+    array element connot be accessed using arbitrary strings as indexes, 
+    but must accessed using nonnegative integers as indexes. (0, 1, 2, 3, 4, 5,) not (-1, -2, 0.2, 0,4 , - 0,4 ens)
+
+*  javascript arrays are zero indexed(need to say -1)
+
+*  javascript array copy operations create shallow copies.
+
+const example = [
+    'John',
+    'Schalk',
+    'Alicia',
+    'Sipho'
+]
+
+console.log(example)         //[ 'John', 'Schalk', 'Alicia', 'Sipho' ]
+
+example.hello = false
+example[100] = 'Leo'
+
+example.someOtherThing = "Hello World"
+
+console.log(example)      /*    '0'John',
+                                '1'Schalk',
+                                '2'Alicia',
+                                '3'Sipho',
+                                hello: false,
+                                someOtherThing: 'Hello World*/
+
+console.log(example.length)     //4
+
+//example[4] = 'Leo'             //5 //[ 'John', 'Schalk', 'Alicia', 'Sipho', 'Leo'  hello: false, someOtherThing: 'Hello World']
+
+console.log(example.length) /*[ 'John', 'Schalk', 'Alicia', 'Sipho' ]
+[
+  'John',
+  'Schalk',
+  'Alicia',
+  'Sipho',
+  <96 empty items>,
+  'Leo',
+  hello: false,
+  someOtherThing: 'Hello World'
+]
+101
+101*/
+
+const class2021 = [
+    'John',
+    'Mary',
+    'Jason',
+    'Renier'
+]
+
+const class2022 = [
+    'John',
+    'Schalk',
+    'Alicia',
+    'Sipho'
+]
+
+const class2023 = [
+    'Sipho',
+    'Renier',
+    'Francois',
+    'Gouwsie'
+]
+
+const checkIfPresent = (student) => {
+    const results = {
+        2021: class2021.includes(student),
+        2022: class2022.includes(student),
+        2023: class2023.includes(student)
+    }
+
+    return results
+}
+
+console.log('Alicia', checkIfPresent('Alicia'))
+console.log('John', checkIfPresent('John'))
+console.log('Tracy', checkIfPresent('Tracy'))   /*Alicia { '2021': false, '2022': true, '2023': false }
+                                                John { '2021': true, '2022': true, '2023': false }
+                                                Tracy { '2021': false, '2022': false, '2023': false }*/
+
+*  indexOf start at the firts to last, lastIndexOf starts  at the back of the array list.
+
+* array.prototype.push() = Add to array to the end.
+* array.prototype.shift() = removes the firts element from array.
+* array.prototype.pop() = remove last element from array.
+* array.prototype.unshift()= add element to start of array.
+
+Modifying the structure of array.
+
+* array.prototype.flat() = return array with sub array element, can be done multiple times
+* array.prototype.slice() = exstract a section of the ceiling array and returns a ne array. /. example console.log(example.slice(0, 1)) start and 1 and end at 1.
+* array.prototype.conscat() = returns a new array that is the ceiling array joined with other array's and or value.
+* array.prototype.splice() = adds and or removes elements from an array.
+* array.prototype.copywithin() = move one element in array to next position in the same array.
+* array.prototype.reverse() = 
