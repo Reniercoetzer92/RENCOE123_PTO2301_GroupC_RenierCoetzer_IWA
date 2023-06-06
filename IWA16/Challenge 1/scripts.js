@@ -66,44 +66,51 @@ const MONTHS = [
   // Only edit below this comment
   
   const createHtml = (athlete) => {
-    firstName, surname, id, races = athlete
-    [date], [time] = races.reverse()
-  
+    const { firstName, surname, id, races } = athlete;
+    const [latestRace] = races.slice(-1);
+    const { date, time } = latestRace;                           //get time and date of last race
+
     const fragment = document.createDocumentFragment();
   
-    title = document.createElement(h2);
-    title= id;
+    const title = document.createElement('h2');                 // h2 as a string
+    title.textContent = id;
     fragment.appendChild(title);
   
-    const list = document.createElement(dl);
+    const list = document.createElement('dl');                  // data list 'dl' as a string
   
-    const day = date.getDate();
-    const month = MONTHS[date.month];
-    const year = date.year;
+    const day = new Date(date).getDate();                       // get the new date
+    const month = MONTHS[new Date(date).getMonth()];            // get month month
+    const year = new Date(date).getFullYear();                  //get full year
   
-    first, second, third, fourth = timeAsArray;
-    total = first + second + third + fourth;
+    const [first, second, third, fourth] = time;
+    const total = first + second + third + fourth;
   
-    const hours = total / 60;
-    const minutes = total / hours / 60;
-  
-    list.innerHTML = /* html */ `
-      <dt>Athlete</dt>
-      <dd>${firstName surname}</dd>
+    const hours = Math.floor(total / 60);                        //add math floor
+    const minutes = total % 60;                                  //add "%" to get time format in seconds.
+    
+    list.innerHTML = /* html Fix code using the proper instipulation*/ 
+    ` <dt>Athlete</dt>
+      <dd>${firstName} ${surname}</dd>
   
       <dt>Total Races</dt>
-      <dd>${races}</dd>
+      <dd>${races.length}</dd>
   
       <dt>Event Date (Latest)</dt>
-      <dd>${day month year}</dd>
+      <dd>${day} ${month} ${year}</dd>
   
       <dt>Total Time (Latest)</dt>
-      <dd>${hours.padStart(2, 0) minutes}</dd>
+      <dd>${hours.toString().padStart(2, '0')} ${minutes.toString().padStart(2, '0')}</dd>
     `;
   
     fragment.appendChild(list);
+
+    return fragment;
   }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const NM372Section = document.querySelector('[data-athlete="NM372"]');
+    const SV782Section = document.querySelector('[data-athlete="SV782"]');
   
-  [NM372], [SV782] = data
-  document.querySelector(NM372).appendChild(createHtml(NM372));
-  document.querySelector(SV782).appendChild(createHtml(SV782));
+    NM372Section.appendChild(createHtml(data.response.data.NM372));
+    SV782Section.appendChild(createHtml(data.response.data.SV782));
+  });
