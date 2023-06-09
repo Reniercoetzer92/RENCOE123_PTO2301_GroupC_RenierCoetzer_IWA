@@ -66,9 +66,9 @@ const MONTHS = [
   // Only edit below this comment
   
   const createHtml = (athlete) => {
-    const { firstName, surname, id, races } = athlete;
+    const {firstName, surname, id, races} = athlete;
     const [latestRace] = races.slice(-1);
-    const { date, time } = latestRace;                           //get time and date of last race
+    const {date, time} = latestRace;                           //get time and date of last race
 
     const fragment = document.createDocumentFragment();
   
