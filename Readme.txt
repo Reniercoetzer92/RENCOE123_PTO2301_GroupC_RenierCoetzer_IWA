@@ -17,3 +17,10 @@ IWA16 (Using Arrays)
 IWA17 (Loops)
 IWA18 (Event Listeners)
 IWA19 (Final Capstone)
+
+To Check List when writing code:
+
+1. check if using Html with javascript check if script.js is loaded into html. with a defer tag.
+2. Check for common errors in the .js file.
+3. Check if 'Sytax' of .js file is coorectly stated.
+4. Check if wording isa correctly used as refference.

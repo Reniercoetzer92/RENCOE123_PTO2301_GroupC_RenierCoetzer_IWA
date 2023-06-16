@@ -1,0 +1,54 @@
+Event Listeners:
+Events are Things that happen in the system you are programming - the system produces ("or files") 
+a signal of some kind when an event occurs, and provides a mechanism by with an action can be automatically taken
+(that is, some code running) when the event occurs.
+Events are fired inside the browser window, and tend to be attached to a specific item that resides in it.
+this might be a single element, a set of elements, the html document loaded in the current tab, or the entire browser window.
+there are many different types of events that can occur. 
+
+common Examples:
+The user selects, click, or hoves the cursor over a cetain element.
+the user chooses a key on the keyboard.
+the user resizes or closes the browser window.
+a web page finishes loading.
+a form is submitted.
+a video is played, paused, or ends.
+an error occurs.
+
+to react to an event, you attach an event handler to it. this is a block of code(usually a javascript function that you as a programmer create)
+that runs when the event fires. when such a block of code is defined to run in response to an event,we say we are registering an event handler.
+Note: event handlers are sometimes called event Listeners - the are pretty much interchangeable for our purposes,
+although strictly speaking, they work together. the listener listens out for the event happenening, and the handler is the code tha run in response to it happenening.
+
+example:
+
+html:
+<button id = "example"> Click me!</button>
+
+Js:
+
+const Example = document.queryqSelector ('#example')
+
+const exampleHandler = () => console.log ('the button was clicked')
+
+example = {
+    ...,
+    addEventListener (eventName, handler){
+        .....,
+    }
+}
+
+example.addEventListener('click', exampleHandler)
+
+Some common events that get dispatched automatically are as follows:
+
+1. scroll when a user scrolls the browser window
+2. keypress when a user presses a key on their keyboard
+3. copy when a user copies content to their operating system clipboard
+4. mouseover when a user moves the mouse over a specific HTML element
+5. input when a user changes a value inside an <input> element
+6. submit when a user submits an HTML <form>
+7. volumechange when a user changes the volume of an audio track being played
+8. resize when a user resizes their browser window
+9. push when a push notification is sent to the device
+10. offline if a user loses connection to the internet
