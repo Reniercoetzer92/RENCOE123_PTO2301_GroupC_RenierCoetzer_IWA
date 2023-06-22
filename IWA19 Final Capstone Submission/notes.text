@@ -32,8 +32,16 @@ As a user, I want to toggle between dark and light modes so that I can use the a
 
 What ive done:
 
-1, import script file src, and defer it.
-2, import data.js to Scripts (authors, books, genres)
-3, Change the icon ref links. and change Json file links to android Chrome png'script
-3, create a file view.js
-4, 
+1,  import script file src, and defer it in html.
+2,  fix locations of files in the meta folder.
+3,  create a file view.js.
+4,  create a file queryselectors.js.
+5,  import 'data.js' to Scripts ( BOOKS_PER_PAGE, books ).
+6,  import 'queryselectors.js' to Scripts ( html )
+7,  import 'view.js' to Scripts ( updateShowMoreButton, populateBookItems, populatDropdownSearchGenres, populateDropdownSearchAuthors )
+8,  import 'view.js' to Scripts ( toggleListDialog, showMoreBooks, toggleSearchDialog, toggleSettingsDialog, handleSearchFormSubmit, handleSettingFormSubmit )
+9,  import 'data.js' to view.js ( BOOKS_PER_PAGE, authors, genres, books )
+10, import 'queryselectors.js' to view.js ( html )
+11, Change the icon ref links. and change Json file links to android Chrome png'script.
+12, create a file view.js.
+13, create a file queryselectors.js.

@@ -1,18 +1,3 @@
-const day = {
-    dark: '10, 10, 20',
-    light: '255, 255, 255',
-}
-
-const night = {
-    dark: '255, 255, 255',
-    light: '10, 10, 20',
-};
-
-export const css = {
-    day: day,
-    night: night
-}
-
 export const html = {
     header: {
         search: document.querySelector('[data-header-search]'),

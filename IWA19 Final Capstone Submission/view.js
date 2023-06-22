@@ -1,5 +1,5 @@
 import { BOOKS_PER_PAGE, authors, genres, books } from './data.js'
-import { html, css } from './queryselectors.js'
+import { html } from './queryselectors.js'
 
 let page = 1;
 let matches = books;
@@ -176,6 +176,21 @@ export const handleSettingFormSubmit = (event) => {
     const formData = new FormData(event.target)
     const result = Object.fromEntries(formData)
     
+    const day = {
+        dark: '10, 10, 20',
+        light: '255, 255, 255',
+    }
+    
+    const night = {
+        dark: '255, 255, 255',
+        light: '10, 10, 20',
+    };
+    
+    const css = {
+        day: day,
+        night: night
+    }
+
     document.documentElement.style.setProperty('--color-light', css[result.theme].light);
     document.documentElement.style.setProperty('--color-dark', css[result.theme].dark);
    
