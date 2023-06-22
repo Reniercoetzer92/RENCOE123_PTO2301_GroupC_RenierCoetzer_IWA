@@ -65,7 +65,7 @@ const handleDragEnd = (event) => {
 
 const handleEditToggle = (event) => {
 
-    if (document.getElementsByClassName('order').length > 0) {
+    if (document.querySelector('order').length >= 0) {
         html.edit.overlay.toggleAttribute('open');
 
         html.edit.title.value = document.querySelector('[data-order-title]').innerText; 

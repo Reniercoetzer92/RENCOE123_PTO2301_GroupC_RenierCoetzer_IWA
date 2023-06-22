@@ -30,18 +30,24 @@ As a user, I want to filter books by author so that I can find books to read by 
 As a user, I want to filter books by genre so that I can find books to read in genres that I enjoy.
 As a user, I want to toggle between dark and light modes so that I can use the app comfortably at night.
 
-What ive done:
+What ive done regarding the files:
 
-1,  import script file src, and defer it in html.
-2,  fix locations of files in the meta folder.
-3,  create a file view.js.
-4,  create a file queryselectors.js.
-5,  import 'data.js' to Scripts ( BOOKS_PER_PAGE, books ).
-6,  import 'queryselectors.js' to Scripts ( html )
-7,  import 'view.js' to Scripts ( updateShowMoreButton, populateBookItems, populatDropdownSearchGenres, populateDropdownSearchAuthors )
-8,  import 'view.js' to Scripts ( toggleListDialog, showMoreBooks, toggleSearchDialog, toggleSettingsDialog, handleSearchFormSubmit, handleSettingFormSubmit )
-9,  import 'data.js' to view.js ( BOOKS_PER_PAGE, authors, genres, books )
-10, import 'queryselectors.js' to view.js ( html )
+1,  Import script file src, and defer it in html.
+2,  Fix locations of files in 'index.html' from the 'meta' folder.
+3,  Create a file view.js.
+4,  Create a file queryselectors.js.
+5,  Import 'data.js' to Scripts ( BOOKS_PER_PAGE, books ).
+6,  Import 'queryselectors.js' to Scripts ( html )
+7,  Import 'view.js' to Scripts ( updateShowMoreButton, populateBookItems, populatDropdownSearchGenres, populateDropdownSearchAuthors )
+8,  Import 'view.js' to Scripts ( toggleListDialog, showMoreBooks, toggleSearchDialog, toggleSettingsDialog, handleSearchFormSubmit, handleSettingFormSubmit )
+9,  Import 'data.js' to view.js ( BOOKS_PER_PAGE, authors, genres, books )
+10, Import 'queryselectors.js' to view.js ( html )
 11, Change the icon ref links. and change Json file links to android Chrome png'script.
-12, create a file view.js.
-13, create a file queryselectors.js.
+
+What ive done regarding the Code:
+
+1,  Constructed a neet layout of Functions and Events for readability in the 'view.js' file.  
+2,  Constructed a neet layout of html attributes, gathered information from the 'index.html' file to make it easier to exstract attributes from (header, list, search, settings)
+    and readability.
+3,  Exported all data from: 'data.js' to ('scripts.js' && 'view.js'.)
+4,  

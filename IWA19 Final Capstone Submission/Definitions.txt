@@ -43,8 +43,3 @@ querySelector =		The querySelector() is a method used for searching and returnin
 
 eventlisteners =	An event listener in JavaScript is a way that you can wait for user interaction like a click or keypress and then run some code whenever that action happens. 
 					One common use case for event listeners is listening for click events on a button. const button = document.
-
-
-
-
-
