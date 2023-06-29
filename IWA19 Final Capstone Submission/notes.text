@@ -50,4 +50,3 @@ What ive done regarding the Code:
 2,  Constructed a neet layout of html attributes, gathered information from the 'index.html' file to make it easier to exstract attributes from (header, list, search, settings)
     and readability.
 3,  Exported all data from: 'data.js' to ('scripts.js' && 'view.js'.)
-4,  

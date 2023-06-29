@@ -1,6 +1,6 @@
 Definitions:
 
-elements = 			Element is the most general base class from which all element objects (i.e. objects that represent elements) in a Document inherit. 
+element = 			Element is the most general base class from which all element objects (i.e. objects that represent elements) in a Document inherit. 
 					It only has methods and properties common to all kinds of elements. More specific classes inherit from Element .
 
 createElement = 	createElement() is used to dynamically create an HTML element node with the specified name via JavaScript. 
@@ -9,7 +9,7 @@ createElement = 	createElement() is used to dynamically create an HTML element n
 					It helps the user to get an element with the help of a name. 
 					The name here is the attribute name of the HTML element.
 
-Atribute = 			a collection of objects that belong to a built-in Attr class, with name and value properties
+Atribute = 			a collection of objects that belong to a built-in Attr class, with name and value properties.
 
 setAttribute =   	setAttribute in JavaScript is mostly used to assign a value to the HTML attributes. 
 	        		We can also add a new attribute with a value to a certain HTML element using the setAttribute() function. 

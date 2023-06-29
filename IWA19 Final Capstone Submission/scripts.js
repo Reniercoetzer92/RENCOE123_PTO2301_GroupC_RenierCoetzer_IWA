@@ -3,7 +3,7 @@ import { html } from './queryselectors.js'
 import { updateShowMoreButton, populateBookItems, populatDropdownSearchGenres, populateDropdownSearchAuthors } from './view.js'
 import { toggleListDialog, showMoreBooks, toggleSearchDialog, toggleSettingsDialog, handleSearchFormSubmit, handleSettingFormSubmit } from './view.js'
 
-if (!books && !Array.isArray(books)) throw new Error('Source required') 
+//if (!books && !Array.isArray(books)) throw new Error('Source required') 
 
 //Functions
 populateBookItems(books, 0, BOOKS_PER_PAGE)
@@ -11,7 +11,7 @@ populatDropdownSearchGenres()
 populateDropdownSearchAuthors()
 updateShowMoreButton(books)
 
-//set initial theme selcted value
+//set initial theme selected value
 html.settings.theme.value = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day';
 
 //event listeners
